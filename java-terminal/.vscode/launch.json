@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "name": "Java Launch",
+          "type": "java",
+          "request": "launch",
+          "mainClass": "AboutMe",
+          "args": ["GLEYSON", "SAMPAIO", "28", "1.58"]
+      }
+  ]
+}
