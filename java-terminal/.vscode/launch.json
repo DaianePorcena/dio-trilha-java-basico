@@ -1,12 +1,38 @@
 {
   "version": "0.2.0",
   "configurations": [
-      {
-          "name": "Java Launch",
-          "type": "java",
-          "request": "launch",
-          "mainClass": "AboutMe",
-          "args": ["GLEYSON", "SAMPAIO", "28", "1.58"]
-      }
+    {
+      "type": "java",
+      "name": "Teste",
+      "request": "launch",
+      "mainClass": "Teste",
+      "projectName": "java-terminal_2bc5f6f0"
+    },
+    {
+      "type": "java",
+      "name": "FormatadorCepExemplo",
+      "request": "launch",
+      "mainClass": "FormatadorCepExemplo",
+      "projectName": "java-terminal_2bc5f6f0"
+    },
+    {
+      "type": "java",
+      "name": "ExemploExcecao",
+      "request": "launch",
+      "mainClass": "ExemploExcecao",
+      "projectName": "java-terminal_2bc5f6f0"
+    },
+    {
+      "name": "Java Launch",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "AboutMe",
+      "args": [
+        "GLEYSON",
+        "SAMPAIO",
+        "28",
+        "1.58"
+      ]
+    }
   ]
 }

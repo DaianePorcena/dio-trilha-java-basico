@@ -1,32 +1,32 @@
+import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
 public class AboutMe {
   public static void main(String[] args) {
-    // String name = args[0];
-    // String lastName = args[1];
-    // int age = Integer.valueOf(args[2]);
-    // double height = Double.valueOf(args[3]);
+    try {
+      // criando o objeto scanner
+      Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
-    Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+      System.out.println("Digite seu nome");
+      String nome = scanner.next();
 
-    System.out.println("Digite seu nome: ");
-    String name = scanner.next();
+      System.out.println("Digite seu sobrenome");
+      String sobrenome = scanner.next();
 
-    System.out.println("Digite seu sobrenome");
-    String lastName = scanner.next();
+      System.out.println("Digite sua idade");
+      int idade = scanner.nextInt();
 
-    System.out.println("Digite a sua idade: ");
-    int age = scanner.nextInt();
+      System.out.println("Digite sua altura");
+      double altura = scanner.nextDouble();
 
-    System.out.println("Digite a sua altura: ");
-    double height = scanner.nextDouble();
-
-    scanner.close();
-
-    System.out.println("Olá, me chamo " + name + " " + lastName);
-    System.out.println("Tenho " + age + " anos de idade");
-    System.out.println("Minha altura é " + height + "m");
-
+      // imprimindo os dados obtidos pelo usuario
+      System.out.println("Olá, me chamo " + nome.toUpperCase() + " " + sobrenome.toUpperCase());
+      System.out.println("Tenho " + idade + " anos ");
+      System.out.println("Minha altura é " + altura + "cm ");
+      scanner.close();
+    } catch (InputMismatchException e) {
+      System.out.println("Os campos idade e altura devem ser preenchidos com números.");
+    }
   }
 }
